@@ -1,0 +1,10 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background-color: black;
+}
+.col-6{
+    border-style: dashed;
+    border-width: 10px;
+    
+}
