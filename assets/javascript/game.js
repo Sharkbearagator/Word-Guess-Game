@@ -9,5 +9,7 @@ var bandNames = ["green-day", "linkin-park","gorillaz","eminem","fall-out-boy"]
 
 
 document.onkeyup = function(event){
-
+    for(var i = 12; i > guessRemains.length; i--){
+$("#guessRemains").html(guessRemains)
+    }
 }
