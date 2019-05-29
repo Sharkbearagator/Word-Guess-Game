@@ -13,6 +13,7 @@ for (var i = 0; i < random.length; i++) {
     answerArray[i] = "_";
    }
    var remainingLetters = random.length;
+  alert(answerArray.join(""));
 
 //Get user imput and indentify what letter it is
 document.onkeyup = function(e){
@@ -22,10 +23,10 @@ document.onkeyup = function(e){
         if(random[i] === letter){
             answerArray[i] = letter;
             remainingLetters--;
-            document.getElementById("#word") === random;
         }
     }
 }
+
 //compare the letter to answers letters
 
 //change guess count and letters guessed
