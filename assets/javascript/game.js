@@ -5,6 +5,8 @@ var bandNames = ["Green Day" ,"Linkin Park","Gorillaz","Eminem","Fall Out Boy"];
 var random = bandNames[Math.floor(Math.random()*bandNames.length)];
 var answerArray = [];
 
+document.getElementById("#answer") === random;
+
 for (var i = 0; i < random.length; i++) {
     answerArray[i] = "_";
    }
@@ -12,14 +14,17 @@ for (var i = 0; i < random.length; i++) {
 
 document.onkeyup = function(e){
     var letter = e.key.toLowerCase();
+    console.log(letter);
     for(var i = 0; i < bandNames.length; i++){
-        if(letter === random.charAt(i)){
-            var domLetter = document.getElementById(letter);
-            domLetter.innerHTML = random.charAt(i);
-            document.getElementById("#word").html(domLetter);
+        if(random[i] === letter){
+            answerArray[i] = letter;
+            remainingLetters--;
+            document.getElementById("#word") === random;
         }
     }
 }
+
+
 if(document.getElementById("#word") === random){
     wins++
 }
