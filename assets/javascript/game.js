@@ -19,6 +19,7 @@ for (var i = 0; i < random.length; i++) {
 document.onkeyup = function(e){
     var letter = e.key.toLowerCase();
     console.log(letter);
+    //compare the letter to answers letters
     for(var i = 0; i < bandNames.length; i++){
         if(random[i] === letter){
             answerArray[i] = letter;
@@ -27,7 +28,7 @@ document.onkeyup = function(e){
     }
 }
 
-//compare the letter to answers letters
+
 
 //change guess count and letters guessed
 
