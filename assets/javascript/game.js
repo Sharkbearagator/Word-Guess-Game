@@ -6,7 +6,7 @@ var guessLetters = []
 var bandNames = ["greenday", "linkinpark", "gorillaz", "eminem", "falloutboy"];
 var random = bandNames[Math.floor(Math.random()*bandNames.length)];
 var answerArray = [];
-var answerCheck = answerArray;
+//var answerCheck = answerArray;
 
 
 
@@ -35,11 +35,11 @@ document.onkeyup = function(e){
         
     }
     //if correct update wins, show picture, and reset
-  for(var j = 0; j< random.length;)
-    if(answerCheck===answerArray){
-        wins++;
-        reset();
-    }
+    //for(var j = 0; j< random.length;)
+    //if(answerCheck===answerArray){
+        //wins++;
+        //reset();
+    //}
         
     
     //if run out of guesses reset
